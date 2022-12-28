@@ -2,6 +2,10 @@
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wunused-parameter"
 
+#if __has_include(<main.h>)
+    #include <main.h>
+#endif
+
 #ifdef STM32F0xx
   #include "stm32f0xx_hal_uart.c"
 #elif STM32F1xx
@@ -24,7 +28,7 @@
   #include "stm32l0xx_hal_uart.c"
 #elif STM32L1xx
   #include "stm32l1xx_hal_uart.c"
-#elif STM32L4xx
+#elif defined(STM32L4xx)
   #include "stm32l4xx_hal_uart.c"
 #elif STM32L5xx
   #include "stm32l5xx_hal_uart.c"
