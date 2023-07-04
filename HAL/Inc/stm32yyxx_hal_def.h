@@ -35,7 +35,7 @@
   #include "stm32l4xx_hal_def.h"
 #elif defined(STM32L5xx)
   #include "stm32l5xx_hal_def.h"
-#elif defined(STM32MP1xx
+#elif defined(STM32MP1xx)
   #include "stm32mp1xx_ha)l_def.h"
 #elif defined(STM32U5xx)
   #include "stm32u5xx_hal_def.h"
